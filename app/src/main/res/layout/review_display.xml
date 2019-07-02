@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/gradient"/>
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-thin"
+       app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstName"
+        android:text="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toBottomOf="@id/display"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lastName"
+        android:text="Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toBottomOf="@+id/firstName"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dob"
+        android:text="Date of Birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/aboutMe"
+        android:text="About Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+       app:layout_constraintTop_toBottomOf="@id/dob"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/favoritePet"
+        android:text="My Favorite Pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toBottomOf="@+id/aboutMe"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/toPage3"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/color8"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/gradient"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/section2Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Section 2:"
+        android:layout_marginTop="8dp"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:textSize="28sp"
+        android:textColor="@color/color3"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/aboutMe"
+        android:text="About Me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        app:layout_constraintTop_toBottomOf="@id/section2Title"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/toPage3"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/color8"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/toPage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Back"
+        android:textColor="@color/color8"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
